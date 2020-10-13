@@ -47,7 +47,6 @@ int main(){
                     p++;
                 }
             }
-            cout << p << endl;
             if (p > 0){
                 kontrast++;
             }

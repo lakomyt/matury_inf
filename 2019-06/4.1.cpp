@@ -29,10 +29,12 @@ int main(){
     for (int i=0; i<300; i++){
         dane >> liczby[i];
     }
+    ofstream out;
+    out.open("wyniki4_1.txt");
     for (int i=0; i<300; i++){
         if(liczby[i] >= 100 and liczby[i] <= 5000){
             if (Prime(liczby[i])){
-                cout << liczby[i] << endl;
+                out << liczby[i] << endl;
             }
         }
     }

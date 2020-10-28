@@ -29,11 +29,13 @@ int main(){
     for (int i=0; i<200; i++){
         dane >> liczby[i];
     }
+    ofstream out;
+    out.open("wyniki4_3.txt");
     int c = 0;
     for (int i=0; i<200; i++){
         if (Weight(liczby[i]) == 1){
             c++;
         }
     }
-    cout << c;
+    out << c;
 }

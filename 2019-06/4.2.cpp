@@ -40,9 +40,11 @@ int main(){
     for (int i=0; i<200; i++){
         dane >> liczby[i];
     }
+    ofstream out;
+    out.open("wyniki4_2.txt");
     for (int i=0; i<200; i++){
         if(Prime(Reverse(liczby[i]))){
-            cout << liczby[i] << endl;
+            out << liczby[i] << endl;
         }
     }
 }
